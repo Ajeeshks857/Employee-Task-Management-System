@@ -1,0 +1,19 @@
+{
+  "name": "roots-employee-task-management",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "start": "npm run start --prefix server",
+    "seed": "npm run seed --prefix server",
+    "build": "npm run build --prefix client",
+    "test": "npm test --prefix server",
+    "format": "prettier --write \"**/*.{js,jsx,json,css,html,md}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,json,css,html,md}\"",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "prettier": "^3.9.10"
+  }
+}
